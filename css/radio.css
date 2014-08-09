@@ -50,3 +50,7 @@ footer {
     font-size: 17px;
     opacity: 0.8;
 }
+.img-rounded {
+    width: 150px;
+    height: 200px;
+}
