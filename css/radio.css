@@ -1,0 +1,32 @@
+@font-face {
+    font-family: MagistralC-Bold;
+    src: url(fonts/MagistralC-Bold.otf);
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: MagistralC-Bold;
+    color: #FFFFFF;
+}
+body {
+    background-color: #000000;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+    color: #00d8ff;
+}
+.colored {
+    color: #00d8ff;
+}
+.navbar-inner{
+	opacity: 0.5;
+}
