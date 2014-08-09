@@ -1,0 +1,11 @@
+﻿<muses-skin folder="kukupipi" togglePlayStop="true">
+  <bg image="bg.png" x="0" y="0" ></bg>
+  <play image="play.png" x="16" y="0" clickimage="stop.png" bgimage="play.png" />
+  <stop image="stop.png" x="16" y="0" clickimage="play.png" bgimage="stop.png" />
+  <!--text x="43" y="14" width="132" height="22" color="#00C6FF" font="arial" size="11"  align="center"/-->
+  <volume x="88" y="7" width="120" height="22" color1="#00C6FF" color2="#000000" barwidth="3" barStep="5"
+      holderImage="holders.png"
+	  mode="bars"  
+  />
+  <!--status imagePlay="statusplay.swf"  x="0" y="0" /-->
+</muses-skin>
