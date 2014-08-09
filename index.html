@@ -28,41 +28,40 @@
 
 <body>
     <!-- Header -->
-    <div class="container">
-        <div class="row">
-            <h1><span class="colored">R</span>адио <span class="colored">[ К</span>укурузная <span class="colored">П</span>ихта <span class="colored">]</span></h1>
+    <div class="intro-header">
+        <div class="container">
+            <div class="row">
+                <h1><span class="colored">R</span>адио <span class="colored">[ К</span>укурузная <span class="colored">П</span>ихта <span class="colored">]</span></h1>
+                <div class="col-lg-12">
+                    <h1>Радио с интригующим названием</h1>
+                    <h3>и хорошей музыкой...</h3>
+                </div>
+                <div class="col-lg-8">
+                    <marquee behavior="alternate" direction="" scrollamount="2">
+                        <p class="colored" id="title"></p>
+                    </marquee>
+                </div>
+            </div>
         </div>
     </div>
-
     <!-- Content -->
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <h1>Радио с интригующим названием</h1>
-                <h3>и хорошей музыкой...</h3>
-            </div>
-            <div class="col-lg-2">
-                <h4>Слушать:</h4>
-            </div>
-            <div class="col-lg-8">
-                <marquee behavior="alternate" direction="" scrollamount="1">
-                    <p class="colored" id="title"></p>
-                </marquee>
-                <center>
-                    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="225" height="35" bgcolor="#000000">
-                        <param name="movie" value="/muses/muses.swf">
-                        <param name="flashvars" value="url=http://radiopixta.zapto.org:8000/radio&amp;lang=auto&amp;codec=mp3&amp;volume=50&amp;introurl=&amp;tracking=true&amp;jsevents=false&amp;buffering=5&amp;skin=/muses/kukupipi.xml&amp;title=radio">
-                        <param name="wmode" value="window">
-                        <param name="allowscriptaccess" value="always">
-                        <param name="bgcolor" value="#000000">
-                        <param name="scale" value="noscale">
-                        <embed src="/muses/muses.swf" flashvars="url=http://radiopixta.zapto.org:8000/radio&amp;lang=auto&amp;codec=mp3&amp;volume=50&amp;introurl=&amp;tracking=true&amp;jsevents=false&amp;buffering=5&amp;skin=/muses/kukupipi.xml&amp;title=radio" width="225" scale="noscale" height="35" wmode="window" bgcolor="#000000" allowscriptaccess="always" type="application/x-shockwave-flash">
-                    </object>
-                </center>
-            </div>
-
             <div class="col-lg-6">
-                <h4><a href="http://radiopixta.zapto.org:8000/radio.m3u" download>Скачать плейлист</a></h4>
+                <h4>Слушать:</h4>
+                <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="225" height="35" bgcolor="rgba(0, 0, 0, 0.32)">
+                    <param name="movie" value="/muses/muses.swf">
+                    <param name="flashvars" value="url=http://radiopixta.zapto.org:8000/radio&amp;lang=auto&amp;codec=mp3&amp;volume=50&amp;introurl=&amp;tracking=true&amp;jsevents=false&amp;buffering=5&amp;skin=/muses/kukupipi.xml&amp;title=radio">
+                    <param name="wmode" value="window">
+                    <param name="allowscriptaccess" value="always">
+                    <param name="bgcolor" value="#000000">
+                    <param name="scale" value="noscale">
+                    <embed src="/muses/muses.swf" flashvars="url=http://radiopixta.zapto.org:8000/radio&amp;lang=auto&amp;codec=mp3&amp;volume=50&amp;introurl=&amp;tracking=true&amp;jsevents=false&amp;buffering=5&amp;skin=/muses/kukupipi.xml&amp;title=radio" width="225" scale="noscale" height="35" wmode="window" bgcolor="#000000" allowscriptaccess="always" type="application/x-shockwave-flash">
+                </object>
+            </div>
+            <div class="col-lg-6 content-text">
+                <p><span class="colored">К</span>онце́пция (от лат. conceptio — понимание, система) — определённый способ понимания, трактовки каких-либо явлений, основная точка зрения, руководящая идея для их освещения[1]; система взглядов на явления в мире, в природе, в обществе[2]; ведущий замысел, конструктивный принцип в научной, художественной, технической, политической и других видах деятельности; комплекс взглядов, связанных между собой и вытекающих один из другого, система путей решения выбранной задачи. Концепция определяет стратегию действий.</p>
+
             </div>
         </div>
     </div>
@@ -70,13 +69,27 @@
         <div class="navbar-inner">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-offset-8">
-                        <span class="colored">R</span>адио <span class="colored">[ К</span>укурузная <span class="colored">П</span>ихта <span class="colored">]</span> by Nikel and Regis <span class="colored glyphicon glyphicon-headphones"></span>
+                    <div class="col-lg-2">
+                        <h4><a href="http://radiopixta.zapto.org:8000/radio.m3u" download>Скачать плейлист</a></h4>
+                    </div>
+                    <div class="col-lg-2">
+                        <h4><a href="#">Архив Эфиров</a></h4>
+                    </div>
+                    <div class="col-lg-2">
+                        <h4><a href="#">О радио</a></h4>
+                    </div>
+                    <div class="col-lg-2">
+                        <h4><a href="#">Обратная связь</a></h4>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="col-lg-offset-9">
+            <span class="colored">R</span>адио <span class="colored">[ К</span>укурузная <span class="colored">П</span>ихта <span class="colored">]</span> by Nikel and Regis <span class="colored glyphicon glyphicon-headphones"></span>
+        </div>
+    </footer>
     <!-- /.container -->
 
     <!-- jQuery Version 1.11.0 -->
