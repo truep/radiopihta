@@ -41,12 +41,6 @@ footer {
     background: url(/img/radio_back_1.png) no-repeat center center;
     background-size: cover;
 }
-.header-logo {
-    position: absolute;
-    left: 0;
-    top: 10px;
-    width: 45%;
-}
 .logo-content {
     position: relative;
     padding-top: 0;
