@@ -15,10 +15,10 @@ p {
 }
 body {
     background-color: #000000;
-    /*    background-image: url(/img/radio_back_1.png) */
 }
 a {
     text-decoration: none;
+    color: #97f2ff;
     cursor: pointer;
 }
 a:hover {
@@ -29,24 +29,34 @@ footer {
     position: fixed;
     right: 0;
     bottom: 0;
-    width: 80%;
-    opacity: 0.5;
+    width: 100%;
+    opacity: 0.3;
 }
 .colored {
     color: #00d8ff;
 }
-.intro-header {
-    padding-top: 50px;
+.div-header {
+    padding-top: 70px;
     padding-bottom: 50px;
     background: url(/img/radio_back_1.png) no-repeat center center;
     background-size: cover;
 }
-.intro-message {
+.header-logo{
+    position: fixed;
+    left: 0;
+    top: 10px;
+    width: 45%;
+   
+}
+.logo-content{
     position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 0;
+    padding-left: 90px;
+    font-size: 50px;
 }
 .content-text {
+    top: 15px;
+    right: 15px;
     font-size: 17px;
     opacity: 0.8;
 }
