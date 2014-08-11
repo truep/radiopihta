@@ -52,3 +52,6 @@ footer {
     font-size: 17px;
     opacity: 0.8;
 }
+.navbar-inverse {
+    background-color: rgba(0, 0, 0, 0);
+}

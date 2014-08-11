@@ -37,11 +37,11 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-offset-2 col-md-8 col-xs-8">
+                    <div class="col-md-offset-2 col-xs-offset-2 col-md-8 col-xs-8">
                         <h1>Радио с интригующим названием</h1>
                         <h3>и хорошей музыкой...</h3>
                     </div>
-                    <div class="col-md-8 col-xs-8">
+                    <div class="col-md-8 col-xs-12">
                         <marquee behavior="alternate" direction="" scrollamount="2">
                             <p class="colored" id="title"></p>
                         </marquee>
@@ -87,30 +87,36 @@
             </div>
         </div>
     </div>
-    <!-- Content -->
-    <!--  Navbar
-    <div class="navbar-fixed-bottom row-fluid">
-        <div class="navbar-inner">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-2">
-                        <h4><a href="http://radiopixta.zapto.org:8000/radio.m3u" download>Скачать плейлист</a></h4>
-                    </div>
-                    <div class="col-lg-2">
-                        <h4><a href="#">Архив Эфиров</a></h4>
-                    </div>
-                    <div class="col-lg-2">
-                        <h4><a href="#">О радио</a></h4>
-                    </div>
-                    <div class="col-lg-2">
-                        <h4><a href="#">Обратная связь</a></h4>
-                    </div>
-                </div>
+    <!-- ./Content -->
+    <!-- ./Navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Мобильный вариант -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+                    <span class="sr-only">Отобразить навигацию</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="responsive-menu">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="http://radiopixta.zapto.org:8000/radio.m3u" download>Скачать плейлист</a>
+                    </li>
+                    <li><a href="#">Архив Эфиров</a>
+                    </li>
+                    <li><a href="#">О радио</a>
+                    </li>
+                    <li><a href="#">Обратная связь</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
     <!-- ./Navbar -->
-
     <!-- Footer -->
     <footer>
         <div class="col-lg-offset-9">
