@@ -40,7 +40,7 @@ footer {
 .div-header {
     padding-top: 70px;
     padding-bottom: 50px;
-    background: url(/img/radio_back_1.png) no-repeat center center;
+    background: url(/img/header_back.png) no-repeat center center;
     background-size: cover;
     text-shadow: 1px 1px 2px #000000, 0 0 1em rgb(0, 216, 255);
 }
