@@ -16,6 +16,7 @@ p {
 }
 body {
     background-color: #000000;
+    padding-bottom: 70px;
 }
 a {
     text-decoration: none;
@@ -29,7 +30,7 @@ a:hover {
 footer {
     position: fixed;
     right: 0;
-    bottom: 0;
+    bottom: 50px;
     width: 100%;
     opacity: 0.3;
 }
@@ -46,7 +47,7 @@ footer {
 .logo-content {
     position: relative;
     padding-top: 0;
-    padding-left: 90px;
+    padding-left: 5%;
     font-size: 50px;
 }
 .content-text {
@@ -54,6 +55,6 @@ footer {
     font-size: 17px;
     opacity: 0.8;
 }
-.navbar-inverse {
-    background-color: rgba(0, 0, 0, 0);
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9);
 }
