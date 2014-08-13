@@ -27,13 +27,6 @@ a:hover {
     text-decoration: none;
     color: #00d8ff;
 }
-footer {
-    position: fixed;
-    right: 0;
-    bottom: 50px;
-    width: 100%;
-    opacity: 0.3;
-}
 .colored {
     color: #00d8ff;
 }
