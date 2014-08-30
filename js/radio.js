@@ -17,6 +17,14 @@ $(document).ready(function () {
 setInterval(function () {
     $("#title").load("txt/track.txt");
 }, 5000);
+//player
+$(function () {
+    $("#player").hide();
+    $("h4.show_player").mousedown(function () {
+        $("#player").slideToggle("slow");
+    });
+});
+
 // menu+content 
 $(function () {
     var content = $("#loadcontent");
@@ -24,10 +32,11 @@ $(function () {
     $('ul#menu li').click(function () {
         var linkname = $(this).attr('class'),
             link = 'content/' + linkname + '.html';
-        content.fadeOut("normal", function () {
-            if (linkname != "download") {
+        if (linkname != "download") {
+            content.fadeOut("normal", function () {
                 content.load(link).fadeIn('normal');
-            } else {}
-        });
+            });
+        } else {}
+
     });
 });

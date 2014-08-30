@@ -59,17 +59,19 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6">
-                <h4><span class="colored">С</span>лушать:</h4>
-                <!-- Плеер -->
-                   <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="225" height="35" bgcolor="rgba(0, 0, 0, 0.32)">
-                    <param name="movie" value="/muses/muses.swf">
-                    <param name="flashvars" value="url=http://radiopixta.zapto.org:8000/radio&amp;lang=auto&amp;codec=mp3&amp;volume=50&amp;introurl=&amp;tracking=true&amp;jsevents=false&amp;buffering=5&amp;skin=/muses/kukupipi.xml&amp;title=radio">
-                    <param name="wmode" value="window">
-                    <param name="allowscriptaccess" value="always">
-                    <param name="bgcolor" value="#000000">
-                    <param name="scale" value="noscale">
-                    <embed src="/muses/muses.swf" flashvars="url=http://radiopixta.zapto.org:8000/radio&amp;lang=auto&amp;codec=mp3&amp;volume=50&amp;introurl=&amp;tracking=true&amp;jsevents=false&amp;buffering=5&amp;skin=/muses/kukupipi.xml&amp;title=radio" width="225" scale="noscale" height="35" wmode="window" bgcolor="#000000" allowscriptaccess="always" type="application/x-shockwave-flash">
-                </object>
+                <h4 class="show_player"><span class="colored">С</span>лушать:</h4>
+                <div id="player">
+                    <!-- Плеер -->
+                    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="225" height="35" bgcolor="rgba(0, 0, 0, 0.32)">
+                        <param name="movie" value="/muses/muses.swf">
+                        <param name="flashvars" value="url=http://radiopixta.zapto.org:8000/radio&amp;lang=auto&amp;codec=mp3&amp;volume=50&amp;introurl=&amp;tracking=true&amp;jsevents=false&amp;buffering=5&amp;skin=/muses/kukupipi.xml&amp;title=radio">
+                        <param name="wmode" value="window">
+                        <param name="allowscriptaccess" value="always">
+                        <param name="bgcolor" value="#000000">
+                        <param name="scale" value="noscale">
+                        <embed src="/muses/muses.swf" flashvars="url=http://radiopixta.zapto.org:8000/radio&amp;lang=auto&amp;codec=mp3&amp;volume=50&amp;introurl=&amp;tracking=true&amp;jsevents=false&amp;buffering=5&amp;skin=/muses/kukupipi.xml&amp;title=radio" width="225" scale="noscale" height="35" wmode="window" bgcolor="#000000" allowscriptaccess="always" type="application/x-shockwave-flash">
+                    </object>
+                </div>
                 <div class="row">
                     <div class="col-md-4 col-xs-4">
                         <img src="img/img4.png" alt="Радио" class="img-responsive img-rounded">
@@ -84,7 +86,7 @@
             </div>
             <div class="col-md-6">
                 <div class="content-text" id="loadcontent">
-                <!-- Загружаемый контент-->
+                    <!-- Загружаемый контент-->
                 </div>
             </div>
         </div>
