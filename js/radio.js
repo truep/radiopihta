@@ -34,23 +34,22 @@ $(function () {
         var linkname = $(this).attr('class'),
             link = 'content/' + linkname + '.html';
         if (linkname != "download") {
-            content.fadeOut("normal", function () {
-                content.load(link).fadeIn('normal');
-            });
-            $(".images").slideUp("slow", function () {
-                $(".images").slideDown("slow");
+            $(".images").fadeOut("fast", function () {
+                content.fadeOut("normal", function () {
+                    content.load(link).fadeIn('normal');
+                });
+                $(this).delay(1000);
+                $(".images").fadeIn("normal");
             });
         } else {}
-
-
-
     });
     $(".logo-content").click(function () {
-        content.fadeOut("normal", function () {
-            content.load('content/main.html').fadeIn('normal');
-        });
-        $(".images").slideUp("slow", function () {
-            $(".images").slideDown("slow");
+        $(".images").fadeOut("fast", function () {
+            content.fadeOut("normal", function () {
+                content.load('content/main.html').fadeIn('normal');
+            });
+            $(this).delay(1000);
+            $(".images").fadeIn("normal");
         });
     });
 });
