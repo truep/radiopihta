@@ -34,7 +34,7 @@ $(function () {
         var linkname = $(this).attr('class'),
             link = 'content/' + linkname + '.html';
         if (linkname != "download") {
-            $(".images").slideUp("fast", function () {
+            $(".images").slideUp("slow", function () {
                 content.fadeOut("normal", function () {
                     content.load(link).fadeIn('normal');
                 });
@@ -44,7 +44,7 @@ $(function () {
         } else {}
     });
     $(".logo-content").click(function () {
-        $(".images").slideUp("fast", function () {
+        $(".images").slideUp("slow", function () {
             content.fadeOut("normal", function () {
                 content.load('content/main.html').fadeIn('normal');
             });
