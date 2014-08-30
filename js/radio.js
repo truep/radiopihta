@@ -17,6 +17,7 @@ $(document).ready(function () {
 setInterval(function () {
     $("#title").load("txt/track.txt");
 }, 5000);
+//
 //player
 $(function () {
     $("#player").hide();
@@ -35,8 +36,14 @@ $(function () {
         if (linkname != "download") {
             content.fadeOut("normal", function () {
                 content.load(link).fadeIn('normal');
+
             });
         } else {}
 
+    });
+    $(".logo-content").click(function () {
+        content.fadeOut("normal", function () {
+            content.load('content/main.html').fadeIn('normal');
+        });
     });
 });
