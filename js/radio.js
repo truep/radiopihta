@@ -17,17 +17,17 @@ $(document).ready(function () {
 setInterval(function () {
     $("#title").load("txt/track.txt");
 }, 5000);
-
+// menu+content 
 $(function () {
-    $('#loadcontent').load('content/main.html');
-
+    var content = $("#loadcontent");
+    content.load('content/main.html');
     $('ul#menu li').click(function () {
-        var linkname = $(this).attr('class');
-        var link = 'content/' + linkname + '.html';
-        if (linkname != "download") {
-            $('#loadcontent').load(link);
-            $('ul#menu li').children('a').removeClass('active');
-            $(this).children('a').addClass('active');
-        } else {}
+        var linkname = $(this).attr('class'),
+            link = 'content/' + linkname + '.html';
+        content.fadeOut("normal", function () {
+            if (linkname != "download") {
+                content.load(link).fadeIn('normal');
+            } else {}
+        });
     });
 });
