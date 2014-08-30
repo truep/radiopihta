@@ -31,17 +31,17 @@ a:hover {
     color: #00d8ff;
 }
 .div-header {
-    padding-top: 70px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 10px;
     background: url(/img/header_back.png) no-repeat center center;
     background-size: cover;
     text-shadow: 1px 1px 2px #000000, 0 0 1em rgb(0, 216, 255);
 }
 .logo-content {
-    position: relative;
     padding-top: 0;
     padding-left: 5%;
     font-size: 50px;
+    cursor: pointer;
 }
 .content-text {
     position: relative;

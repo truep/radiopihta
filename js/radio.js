@@ -18,14 +18,14 @@ setInterval(function () {
     $("#title").load("txt/track.txt");
 }, 5000);
 //
-//player
+/*player
 $(function () {
     $("#player").hide();
     $("h4.show_player").mousedown(function () {
         $("#player").slideToggle("slow");
     });
 });
-
+*/
 // menu+content 
 $(function () {
     var content = $("#loadcontent");
@@ -36,14 +36,22 @@ $(function () {
         if (linkname != "download") {
             content.fadeOut("normal", function () {
                 content.load(link).fadeIn('normal');
-
+            });
+            $(".images").slideUp("slow", function () {
+                $(".images").slideDown("slow");
             });
         } else {}
+
+
 
     });
     $(".logo-content").click(function () {
         content.fadeOut("normal", function () {
             content.load('content/main.html').fadeIn('normal');
         });
+        $(".images").slideUp("slow", function () {
+            $(".images").slideDown("slow");
+        });
     });
 });
+// images
