@@ -1,6 +1,8 @@
 /*http://radiopixta.zapto.org/script/track.txt*/
+/*
 function show() {
     $.ajax({
+        
         url: "txt/track.txt",
         cache: false,
         success: function (html) {
@@ -17,6 +19,10 @@ $(document).ready(function () {
 setInterval(function () {
     $("#title").load("txt/track.txt");
 }, 5000);
+
+*/
+
+
 //
 /*player
 $(function () {
