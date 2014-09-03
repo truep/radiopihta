@@ -1,5 +1,4 @@
 // show current playing song
-
 function show() {
     $.ajax({
         url: "scripts/get_song.py",
@@ -8,12 +7,8 @@ function show() {
             $('#title').html(track);
         },
     });
-};
-$(function () {
-    show();
-    setInterval('show()', 5000);
-});
-
+}
+setInterval('show()', 5000);
 
 // menu+content 
 $(function () {

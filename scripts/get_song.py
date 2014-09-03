@@ -9,7 +9,6 @@ __status__ = "Testing"
 import requests
 from pyquery import PyQuery as pq
 
-
 def application(environ, start_response):
     SERVER = "http://radiopixta.zapto.org"
     PORT = "8000"
