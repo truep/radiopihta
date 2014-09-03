@@ -9,7 +9,10 @@ function show() {
         },
     });
 };
-setInterval('show()', 5000)
+$(function () {
+    show();
+    setInterval('show()', 5000);
+});
 
 
 // menu+content 
