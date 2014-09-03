@@ -2,6 +2,9 @@
     font-family: MagistralC-Bold;
     src: url(fonts/MagistralC-Bold.otf);
 }
+html {
+    overflow: hidden;
+}
 body,
 h1,
 h2,
