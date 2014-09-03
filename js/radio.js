@@ -1,37 +1,17 @@
-/*http://radiopixta.zapto.org/script/track.txt*/
-/*
+// show current playing song
+
 function show() {
     $.ajax({
-        
-        url: "txt/track.txt",
+        url: "scripts/get_song.py",
         cache: false,
-        success: function (html) {
-            $("#title").html(html);
-        }
+        success: function (track) {
+            $('#title').html(track);
+        },
     });
-}
-
-$(document).ready(function () {
-    show();
-    setInterval('show()', 5000);
-});
-
-setInterval(function () {
-    $("#title").load("txt/track.txt");
-}, 5000);
-
-*/
+};
+setInterval('show()', 5000)
 
 
-//
-/*player
-$(function () {
-    $("#player").hide();
-    $("h4.show_player").mousedown(function () {
-        $("#player").slideToggle("slow");
-    });
-});
-*/
 // menu+content 
 $(function () {
     var content = $("#loadcontent");
