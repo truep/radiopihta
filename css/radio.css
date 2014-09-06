@@ -18,6 +18,9 @@ p {
     color: #FFFFFF;
     letter-spacing: 0.5px;
 }
+p:first-letter {
+    color: #00d8ff;
+}
 body {
     background-color: #000000;
     padding-bottom: 70px;
